@@ -35,7 +35,7 @@ require("winbarbuf").setup()
 
 ```lua
 {
-    "YOUR_USERNAME/winbarbuf.nvim",
+    "olivgr/winbarbuf.nvim",
     config = function()
         require("winbarbuf").setup()
     end,
