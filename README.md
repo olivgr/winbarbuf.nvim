@@ -47,6 +47,7 @@ require("winbarbuf").setup()
 require("winbarbuf").setup({
     separator = "  ",
     prefix = "b:",
+    show_filename = true,
     current_hl = "WinBar",
     other_hl = "WinBarOther",
     hover_hl = "WinBarHover",
