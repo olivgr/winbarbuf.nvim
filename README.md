@@ -1,10 +1,13 @@
 # winbarbuf.nvim
 
-A buffer list displayed in Neovim's winbar.
+Filename and buffer list displayed in Neovim's winbar.
+
+## Screenshot
+![winbarbuf.nvim.](screenshot.png)
 
 ## Features
 
-- Displays listed buffers in the winbar
+- Displays filename and buffers in the winbar
 - Click a buffer number to switch buffers
 - Right-click to close buffers
 - Mouse hover highlighting
@@ -12,6 +15,21 @@ A buffer list displayed in Neovim's winbar.
 - No dependencies
 
 ## Installation
+
+### vim-plug
+
+Add the following to your init.vim or init.lua:
+```lua
+Plug 'olivgr/winbarbuf.nvim'
+```
+Then run:
+```lua
+:PlugInstall
+```
+Finally, add:
+```lua
+require("winbarbuf").setup()
+```
 
 ### lazy.nvim
 
@@ -26,7 +44,7 @@ A buffer list displayed in Neovim's winbar.
 
 ## Configuration
 ```lua
-require("buffer_winbar").setup({
+require("winbarbuf").setup({
     separator = "  ",
     prefix = "b:",
     current_hl = "WinBar",
