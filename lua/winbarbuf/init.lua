@@ -2,7 +2,7 @@ local M = {}
 
 M.config = {
     separator = "  ",
-    prefix = "b:",
+    prefix = "",
 
     -- Highlight for the current buffer.
     current_hl = "WinBar",
