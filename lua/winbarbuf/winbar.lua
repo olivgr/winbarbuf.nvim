@@ -17,7 +17,8 @@ local function buffer_label(buf)
     end
 
     return string.format(
-        "%%#%s#%%%d@v:lua.require('winbarbuf').mouse@%s%d%%T%%*",
+        "%%#%s#%%%d@v:lua.require'winbarbuf'.mouse@%s%d%%T%%*",
+        --"%%#%s#%%%d@v:lua.require('winbarbuf').mouse@%s%d%%T%%*",
         hl,
         buf,
         winbarbuf.config.prefix,

@@ -4,10 +4,6 @@ local winbarbuf = require("winbarbuf")
 local buffers = require("winbarbuf.buffers")
 
 function M.mouse(minwid, clicks, button, modifiers)
-    vim.notify(
-        "CLICK: " .. tostring(minwid) .. " " .. tostring(button)
-    )
-
     local buf = tonumber(minwid)
 
     if not buf or not buffers.valid(buf) then
