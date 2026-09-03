@@ -29,6 +29,9 @@ M.state = {
 function M.setup(opts)
     M.config = vim.tbl_deep_extend("force", M.config, opts or {})
 
+    -- Enable mouse
+    vim.opt.mouse = "a"
+
     -- Default highlights.
     vim.api.nvim_set_hl(0, "WinBarOther", {
         link = "Comment",
