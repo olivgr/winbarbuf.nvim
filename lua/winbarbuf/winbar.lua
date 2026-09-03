@@ -29,11 +29,16 @@ end
 function M.render()
     local result = {}
 
+    local filename = ""
+    if buffer_winbar.config.show_filename then
+        filename = vim.fn.expand("%:t") .. "%m"
+    end
+
     for _, buf in ipairs(buffers.list()) do
         table.insert(result, buffer_label(buf))
     end
 
-    return vim.fn.expand("%:t")
+    return filename
         .. "%m%="
         .. table.concat(result, winbarbuf.config.separator)
 end

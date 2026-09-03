@@ -4,6 +4,8 @@ M.config = {
     separator = "  ",
     prefix = "",
 
+    show_filename = true,
+
     -- Highlight for the current buffer.
     current_hl = "WinBar",
 
