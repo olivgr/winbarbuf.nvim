@@ -1,6 +1,6 @@
 # winbarbuf.nvim
 
-Filename and buffer list displayed in Neovim's winbar.
+Filename and buffer list displayed in the winbar.
 
 ## Screenshot
 ![winbarbuf.nvim.](screenshot.png)
