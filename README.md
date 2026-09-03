@@ -55,3 +55,6 @@ require("winbarbuf").setup({
     hover = true,
 })
 ```
+
+## Tips
+- I like to map Ctrl-h to `:bprevious` and Ctrl-l to `:bnext` for easy buffer switching.
