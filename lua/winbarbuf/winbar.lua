@@ -30,7 +30,7 @@ function M.render()
     local result = {}
 
     local filename = ""
-    if buffer_winbar.config.show_filename then
+    if winbarbuf.config.show_filename then
         filename = vim.fn.expand("%:t") .. "%m"
     end
 
