@@ -39,7 +39,7 @@ function M.render()
     end
 
     return filename
-        .. "%m%="
+        --.. "%m%="
         .. table.concat(result, winbarbuf.config.separator)
 end
 
