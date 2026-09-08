@@ -32,7 +32,7 @@ function M.render()
     local filename = ""
     if winbarbuf.config.show_filename then
         filename = string.format(
-            "%%#s#%s%%*",
+            "%%#%s#%s%%*",
             winbarbuf.config.filename_hl,
             vim.fn.expand("%:t") .. "%m"
         )
