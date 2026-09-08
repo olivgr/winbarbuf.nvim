@@ -58,3 +58,5 @@ require("winbarbuf").setup({
 
 ## Tips
 - I like to map Ctrl-h to `:bprevious` and Ctrl-l to `:bnext` for easy buffer switching.
+
+- If you want to customize the colors for current_hl, other_hl and hover_hl, take a look at the current colors of your colorscheme by typing `:highlight`. That gives you a list of the currently defined colors.
