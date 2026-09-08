@@ -45,7 +45,7 @@ function M.setup(opts)
 
     -- Enable the winbar.
     vim.opt.winbar =
-        "%!v:lua.require('winbarbuf').winbar()"
+        "%{%v:lua.require('winbarbuf').winbar()%}"
 
     if M.config.hover then
         vim.opt.mousemoveevent = true
