@@ -31,7 +31,11 @@ function M.render()
 
     local filename = ""
     if winbarbuf.config.show_filename then
-        filename = vim.fn.expand("%:t") .. "%m"
+        filename = string.format(
+            "%%#s#%s%%*",
+            winbarbuf.config.filename_hl,
+            vim.fn.expand("%:t") .. "%m"
+        )
     end
 
     for _, buf in ipairs(buffers.list()) do

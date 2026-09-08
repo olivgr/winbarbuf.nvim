@@ -6,6 +6,9 @@ M.config = {
 
     show_filename = true,
 
+    -- Highlight for the filename
+    filename_hl = "WinBar"
+
     -- Highlight for the current buffer.
     current_hl = "WinBar",
 
